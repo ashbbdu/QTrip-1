@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QTrip</title>
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <!-- TODO: MODULE_LAYOUT -->
+  <!-- 1. Create a <link> to the first stylesheet needed for Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+
+  <!-- TODO: MODULE_LAYOUT -->
+  <!-- 1. Use appropriate css classes on nav element. -->
+  <!-- 2. Add child elements as required. -->
+
+    
+
+
+  <!-- TODO: MODULE_LAYOUT -->
+  <!-- 1. Use appropriate css classes on the hero image container element. -->
+  <!-- 2. Add child elements as required. -->
+  <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <a class="navbar-brand" href="index.html">QTrip</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/pages/adventures/index.html">Explore</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+   <div class="hero-image d-flex align-items-center justify-content-center flex-column">
+      <h1 class="hero-subheading">Welcome to QTrip</h1>
+        <p class="hero-para">Explore the world with fantastic places to venture around</p>
+        <label for="search-box"></label>
+        <input class="hero-input" type="text" id="search-box" placeholder="Search a City">
+   </div> 
+
+
+  <div class="container mt-3">
+    <!-- TODO: MODULE_LAYOUT -->
+    <!-- 1. Create the grid like layout as required. -->
+    <div class="row">
+      <div class="cities col-12 col-sm-6 col-lg-3">
+        <a href="./pages/adventures/index.html">
+        <div class="tile">
+          <div class="tile-content">
+            <h4>BENGALURU</h4>
+            <p>100+ Places</p>
+          </div>
+          <div class="tile-img">
+            <img src="./assets/bengaluru.jpg" alt="" class="img-fluid">
+          </div>
+        </div>
+      </a>
+      </div>
+      <div class="cities col-12 col-sm-6 col-lg-3">
+        <div class="tile">
+          <div class="tile-content">
+            <h4>KOLKATA</h4>
+            <p>52+ Places</p>
+          </div>
+          <div class="tile-img">
+            <img src="./assets/kolkata.jpg" alt="" class="img-fluid">
+          </div>
+        </div>
+      </div>
+      <div class="cities col-12 col-sm-6 col-lg-3">
+        <div class="tile">
+          <div class="tile-content">
+            <h4>GOA</h4>
+            <p>160+ Places</p>
+          </div>
+          <div class="tile-img">
+            <img src="./assets/goa.jpg" alt="" class="img-fluid">
+          </div>
+        </div>
+      </div>
+      <div class="cities col-12 col-sm-6 col-lg-3">
+        <div class="tile">
+          <div class="tile-content">
+            <h4>MUMBAI</h4>
+            <p>121+ Places</p>
+          </div>
+          <div class="tile-img">
+            <img src="./assets/mumbai.jpg" alt="" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="cities col-12 col-sm-6 col-lg-3">
+        <div class="tile">
+          <div class="tile-content">
+            <h4>SINGAPORE</h4>
+            <p>89+ Places</p>
+          </div>
+          <div class="tile-img">
+            <img src="./assets/singapore.jpg" alt="" class="img-fluid">
+          </div>
+        </div>
+      </div>
+      <div class="cities col-12 col-sm-6 col-lg-3">
+        <div class="tile">
+          <div class="tile-content">
+            <h4>DUBAI</h4>
+            <p>74+ Places</p>
+          </div>
+          <div class="tile-img">
+            <img src="./assets/dubai.jpg" alt="" class="img-fluid">
+          </div>
+        </div>
+      </div>
+      <div class="cities col-12 col-sm-6 col-lg-3">
+        <div class="tile">
+          <div class="tile-content">
+            <h4>MALAYSIA</h4>
+            <p>172+ Places</p>
+          </div>
+          <div class="tile-img">
+            <img src="./assets/malaysia.jpg" alt="" class="img-fluid">
+          </div>
+        </div>
+      </div>
+      <div class="cities col-12 col-sm-6 col-lg-3">
+        <div class="tile">
+          <div class="tile-content">
+            <h4>PARIS</h4>
+            <p>150+ Places</p>
+          </div>
+          <div class="tile">
+            <img src="./assets/paris.jpg" alt="" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container text-center">© QTrip 2020</div>
+  </footer>
+
+  <!-- These are scripts needed for bootstrap to work -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
